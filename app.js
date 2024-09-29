@@ -4,7 +4,8 @@ document.getElementById("add-expense").addEventListener("click", function () {
   const newExpense = document.createElement("div");
   newExpense.classList.add("expense-item", "flex", "space-x-4", "mb-2");
   newExpense.innerHTML = `
-        <input type="number" name="expenses[]" class="expense w-full p-2 border border-gray-300 rounded-md" placeholder="Enter expense">
+        <input type="text" name="expenseName[]" class="expense-name w-2/3 p-2 border border-gray-300 rounded-md" placeholder="Expense Name">
+        <input type="number" name="expenseAmount[]" class="expense w-1/3 p-2 border border-gray-300 rounded-md" placeholder="Amount">
         <button type="button" class="remove-expense bg-red-500 text-white px-4 py-2 rounded-md">Remove</button>
     `;
 
