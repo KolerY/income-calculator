@@ -37,10 +37,10 @@ function loadData() {
       const newExpense = document.createElement("div");
       newExpense.classList.add("expense-item", "flex", "space-x-4", "mb-2");
       newExpense.innerHTML = `
-              <input type="text" name="expenseName[]" class="expense-name w-2/3 p-2 border border-gray-600 rounded-md bg-gray-700 text-white" placeholder="Expense Name" value="${expense.name}">
-              <input type="number" name="expenseAmount[]" class="expense w-1/3 p-2 border border-gray-600 rounded-md bg-gray-700 text-white" placeholder="Amount" value="${expense.amount}">
-              <button type="button" class="remove-expense bg-red-500 text-white px-4 py-2 rounded-md">Remove</button>
-          `;
+                <input type="text" name="expenseName[]" class="expense-name w-2/3 p-2 border border-gray-600 rounded-md bg-gray-700 text-white" placeholder="Expense Name" value="${expense.name}">
+                <input type="number" name="expenseAmount[]" class="expense w-1/3 p-2 border border-gray-600 rounded-md bg-gray-700 text-white" placeholder="Amount" step="0.01" value="${expense.amount}">
+                <button type="button" class="remove-expense bg-red-500 text-white px-4 py-2 rounded-md">Remove</button>
+            `;
 
       expensesContainer.appendChild(newExpense);
 
@@ -61,10 +61,10 @@ document.getElementById("add-expense").addEventListener("click", function () {
   const newExpense = document.createElement("div");
   newExpense.classList.add("expense-item", "flex", "space-x-4", "mb-2");
   newExpense.innerHTML = `
-          <input type="text" name="expenseName[]" class="expense-name w-2/3 p-2 border border-gray-300 rounded-md" placeholder="Expense Name">
-          <input type="number" name="expenseAmount[]" class="expense w-1/3 p-2 border border-gray-300 rounded-md" placeholder="Amount">
-          <button type="button" class="remove-expense bg-red-500 text-white px-4 py-2 rounded-md">Remove</button>
-      `;
+            <input type="text" name="expenseName[]" class="expense-name w-2/3 p-2 border border-gray-300 rounded-md" placeholder="Expense Name">
+            <input type="number" name="expenseAmount[]" class="expense w-1/3 p-2 border border-gray-300 rounded-md" placeholder="Amount" step="0.01">
+            <button type="button" class="remove-expense bg-red-500 text-white px-4 py-2 rounded-md">Remove</button>
+        `;
 
   expensesContainer.appendChild(newExpense);
 

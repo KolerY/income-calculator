@@ -19,7 +19,7 @@
                 <label for="income" class="block font-semibold text-gray-300">Income:</label>
                 <input type="number" id="income"
                     class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-white"
-                    placeholder="Enter your monthly income" required>
+                    placeholder="Enter your monthly income" step="0.01" required>
             </div>
 
             <div id="expenses-container">
@@ -30,7 +30,7 @@
                         placeholder="Expense Name">
                     <input type="number" name="expenseAmount[]"
                         class="expense w-1/3 p-2 border border-gray-600 rounded-md bg-gray-700 text-white"
-                        placeholder="Amount">
+                        placeholder="Amount" step="0.01">
                     <button type="button"
                         class="remove-expense bg-red-500 text-white px-4 py-2 rounded-md">Remove</button>
                 </div>
